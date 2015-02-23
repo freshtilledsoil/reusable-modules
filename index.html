@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Reusable Carousel</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+
+  <link rel="stylesheet" href="global_assets/global.css">
+  <link rel="stylesheet" href="carousel/fts.carousel.css"/>
+  <link rel="stylesheet" href="navigation/nav.css">
+  
+  <script src="global_assets/global.js"></script>
+  
+</head>
+<body>
+
+  <div class="is-hidden">
+    <ul>
+      <li><a href="#banner">Skip to banner</a></li>
+      <li><a href="#nav">Skip to main navigation</a></li>
+    </ul>
+  </div><!--/.is-hidden-->
+
+  <header role="banner" class="banner" id="banner">
+    <div class="container">
+      <h1 class="branding">
+        <a href="#" class="logo">Project Monsterfy</a>
+      </h1>
+
+      <a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
+
+      <nav role="navigation" class="nav" id="nav">
+        <ul class="nav-menu">
+          <li class="menu-item"><a href="#">Navigation Item</a></li>
+          <li class="menu-item"><a href="#">Navigation Item</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Navigation Item</a></li>
+          <li class="menu-item"><a href="#">Navigation Item</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+              <li class="menu-item"><a href="#">Sub Menu Item</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Navigation Item</a></li>
+        </ul>
+      </nav><!--/.nav-->
+    </div><!--/.container-->
+  </header><!--/.banner-->
+
+  <div class="tile-group is-hero" data-type="hero" data-slidesToShow="1">
+
+    <section class="tile" style="background-image: url(carousel/images/business-kitten.jpg);">
+      <div class="container">
+        <div class="tile-content">
+          <header class="tile-header">
+            <h1>This is a heading for a hero tile</h1>
+          </header><!--/.tile-header-->
+          
+          <div class="title-body">
+            <p>Hey there, forever being a hero!</p>
+          </div><!--/.title-body-->
+          
+          <footer class="tile-footer">
+            <a href="#" class="tile-cta">Do action</a>
+          </footer><!--/.tile-footer-->
+        </div><!--/.tile-content-->
+      </div><!--/.container-->
+    </section><!--/.tile-->
+
+    <section class="tile" style="background-image: url(carousel/images/business-smile.jpg);">
+      <div class="container">
+        <div class="tile-content">
+          <header class="tile-header">
+            <h1>This is a heading for a hero tile</h1>
+          </header><!--/.tile-header-->
+          
+          <div class="title-body">
+            <p>Hey there, forever being a hero!</p>
+          </div><!--/.title-body-->
+          
+          <footer class="tile-footer">
+            <a href="#" class="tile-cta">Do action</a>
+          </footer><!--/.tile-footer-->
+        </div><!--/.tile-content-->
+      </div><!--/.container-->
+    </section><!--/.tile-->
+
+    <section class="tile" style="background-image: url(carousel/images/business.jpg);">
+      <div class="container">
+        <div class="tile-content">
+          <header class="tile-header">
+            <h1>This is a heading for a hero tile</h1>
+          </header><!--/.tile-header-->
+          
+          <div class="title-body">
+            <p>Hey there, forever being a hero!</p>
+          </div><!--/.title-body-->
+          
+          <footer class="tile-footer">
+            <a href="#" class="tile-cta">Do action</a>
+          </footer><!--/.tile-footer-->
+        </div><!--/.tile-content-->
+      </div><!--/.container-->
+    </section><!--/.tile-->
+
+  </div><!--/.tile-group.is-hero-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="navigation/nav.js"></script>
+  
+  <script src="carousel/slick/slick.min.js"></script>
+  <script src="carousel/fts.carousel.js"></script>
+  
+</body>
+</html>

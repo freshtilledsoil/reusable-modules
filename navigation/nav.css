@@ -15,8 +15,15 @@
   line-height: 60px;
   background: #333;
   color: #fff;
-  float: left;
-  width: 100%; }
+  clear: both;
+  position: relative;
+  z-index: 999;
+  *zoom: 1; }
+  .banner:before, .banner:after {
+    content: " ";
+    display: table; }
+  .banner:after {
+    clear: both; }
   .banner a {
     color: #fff; }
 
@@ -238,5 +245,3 @@
   .banner,
   .menu-item > a {
     line-height: 48px; } }
-
-/*# sourceMappingURL=nav.css.map */
