@@ -18,6 +18,8 @@
   clear: both;
   position: relative;
   z-index: 999;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   *zoom: 1; }
   .banner:before, .banner:after {
     content: " ";
