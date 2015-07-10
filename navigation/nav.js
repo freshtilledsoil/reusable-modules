@@ -43,7 +43,7 @@
 
     subMenu.attr('aria-expanded', 'false').attr('id', slug);
     parentMenu.addClass('is-expandable').addClass('responsive-nav');
-    parentMenu.find('a').first().after('<button type="button" aria-controls="' + slug + '" class="ui-toggle-button" data-text="close">open</button>');
+    parentMenu.find('> a').first().after('<button type="button" aria-controls="' + slug + '" class="ui-toggle-button" data-text="close">open</button>');
 
     parentMenu.find('.ui-toggle-button').first().on('click', function() {
 
