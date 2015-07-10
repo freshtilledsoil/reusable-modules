@@ -164,7 +164,7 @@
 
       var self = $(this);
       var parentMenu = self;
-      var subMenu = self.find('.sub-menu');
+      var subMenu = self.find('.sub-menu').first();
       var subMenuAnchor = subMenu.find('a');
       var parentContainer;
 
