@@ -1,4 +1,4 @@
-;(function($, w, doc){
+;(function($, w, doc) {
 
   // Enable strict mode
   "use strict";
@@ -11,40 +11,37 @@
 
   // Start defining methods here
   Carousel.init = function() {
-    
-    
-    
-    $('.tile-group').each(function(){
 
-      var carousel = $(this);
-      var slidesToShow = carousel.attr('data-slidesToShow');
-      var slideCount = carousel.find('.tile').length;
+    $('.tile-group').each(function() {
 
-      if(slideCount > 1) {
+      var $carousel = $(this);
+      var slideCount = $carousel.find('.tile').length;
 
-        carousel.slick({
-          autoplay: false,
-          autoplaySpeed: 1000,
-          centerMode: true,
-          centerPadding: '0px',
-          dots: true,
-          fade: false,
-          arrows: true,
-          mobileFirst: false,
-          initialSlide: 0,
-          responsive: null,
-          slidesToShow: slidesToShow,
-          slidesToScroll: slidesToShow,
-          speed: 300,
-          variableWidth: false,
-          vertical: false,
-          customPaging: function(slider, i) {
-              return '<button type="button" data-role="none">' + (i + 1) + '</button>';
-          }
-        });
+      var defaults = {
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        centerPadding: '0px',
+        dots: true,
+        fade: false,
+        initialSlide: 0,
+        mobileFirst: false,
+        responsive: null,
+        speed: 300,
+        variableWidth: false,
+        vertical: false,
 
-      } // if count
+        customPaging: function(slider, i) {
+          return '<button type="button" data-role="none">' + (i + 1) + '</button>';
+        }
+      };
 
+      var options = $.extend({}, defaults, $carousel.data());
+
+      if (slideCount > 1) {
+        $carousel.slick(options);
+      }
     });
 
   };
@@ -52,4 +49,4 @@
   // Start the application
   Carousel.init();
 
-} ( jQuery, this, this.document ));
+}(jQuery, this, this.document));
